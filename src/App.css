@@ -1,0 +1,76 @@
+pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.ui.sidebar.setting-sidebar {
+    border-top-color: transparent;
+    transition: transform .5s ease, width .5s ease;
+    overflow: visible !important;
+    visibility: visible !important;
+}
+
+.ui.sidebar.setting-sidebar .btn-close {
+    /* background-color: #161e2a;
+    border: 1px solid #ccc; */
+    position: absolute;
+    top: 0;
+    right: -45px;
+}
+
+.ui.sidebar.setting-sidebar .btn-close::before {
+    background-color: #161e2a;
+    border: 1px solid #ccc;
+    height: 100%;
+}
+
+.ui.sidebar.setting-sidebar .btn-close > i.icon {
+    color: #fff;
+    float: none;
+    margin: 0;
+    width: auto;
+}
+
+.ui.sidebar.visible + div {
+    padding-left: 260px;
+    /* width: calc(100% - 260px); */
+}
+
+#preview {
+    width: 100%;
+    height: calc(60vh - 25px);
+    border: 0;
+}
+
+#html {
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    color: #505050;
+    display: block;
+    /* height: calc(40vh - 25px); */
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.ui.secondary.menu {
+    margin-bottom: 0 !important;
+}
+
+.ui.tab.active, .ui.tab.open {
+    z-index: 10;
+}
+
+.ui.segment[class*="bottom attached"].tab {
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
